@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran Anggota</title>
+</head>
+
+<body>
+    <h1>Formulir Pendaftaran Anggota</h1>
+    <fieldset>
+     <legend>Data Diri</legend>
+
+    <form action="proses.php" method="post"></form>
+<p>
+    <label for="nama_lengkap">Nama Lengkap:</label>
+    <input type="text" id="nama lengkap" name="nama_lengkap"
+    placeholder="Masukkan nama lengkap" required>
+</p>
+
+<p>
+    <label for="email">Alamat Email:</label>
+    <input type="email" id="email" name="email">
+
+</p>
+    <label for="password">Kata Sandi:</label>
+    <input type="password" id="password" name="password">
+</p>
+
+
+     <fieldset>
+        <legend>Jenis Kelamin:</legend>
+            <input type="radio" 
+                     id="jenis_kelamin_laki_laki" 
+                   name="jenis_kelamin"
+                  value="laki-laki" required>
+
+            <label for="jenis_kelamin_laki_laki"> Laki-laki</label>
+
+            <input type="radio" 
+                     id="jenis_kelamin_perempuan" 
+                   name="jenis_kelamin"
+                  value="perempuan">
+
+            <label for="jenis_kelamin_perempuan">Perempuan</label>
+
+        </fieldset>
+    
+        <p>
+            <label for="jurusan">Jurusan / Divisi:</label>
+            <select id="jurusan" name="jurusan" required>
+
+                <option value="">Pilih jurusan atau divisi</option>
+                <option value="teknologi_informasi">Teknologi Informasi</option>
+                <option value="desain">Desain</option>
+                <option value="pemasaran">Pemasaran</option>
+            </select>
+        </p>
+
+            <legend>Keahlian:</legend>
+
+            <input type="checkbox" id="keahlian_web" name="keahlian[]" value="web">
+            <label for="keahlian_web">Pengembangan Web</label>
+
+            <input type="checkbox" id="keahlian_mobile" name="keahlian[]" value="mobile">
+            <label for="keahlian_mobile">Pengembangan Mobile</label>
+
+            <input type="checkbox" id="keahlian_desain" name="keahlian[]" value="desain">
+            <label for="keahlian_desain">Desain Grafis</label>
+        
+
+        <p>
+            <label for="alamat">Alamat:</label> <br>
+            <textarea id="alamat" 
+                    name="alamat" 
+                    rows="4" 
+                    cols="50" 
+             placeholder="Masukkan alamat lengkap"> </textarea>
+        </p>
+
+        <button type="submit">Daftar</button>
+        <button type="reset">Reset</button>
+    </form>
+
+
+
+</body>
+</html>
